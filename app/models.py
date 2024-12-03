@@ -89,7 +89,9 @@ class Emprestimo(models.Model):
 
         def __str__(self):
             return self.usuario.nome
-
+        class Meta:
+            verbose_name = "Emprestimo"
+            verbose_name_plural = "Emprestimos"
         # Superclasse de 'pessoa' que sera uma classe pai para: pessoafísica e pessoajurídica
 
 class Pessoa(models.Model):
